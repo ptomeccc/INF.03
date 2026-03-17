@@ -1,0 +1,148 @@
+# ------------------------------------------------------------
+# OS & system files
+# ------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+
+# ------------------------------------------------------------
+# IDE & editor files
+# ------------------------------------------------------------
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (PhpStorm, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# NetBeans
+nbproject/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+# Notepad++ / generic
+*.bak
+*.tmp
+*.swp
+*~
+
+
+# ------------------------------------------------------------
+# PHP
+# ------------------------------------------------------------
+
+# Composer
+vendor/
+composer.lock
+
+# PHP cache & compiled files
+*.cache
+*.log
+/logs/
+/log/
+
+# Environment / config files with secrets
+.env
+.env.*
+config.local.php
+config.private.php
+
+# PHP sessions (if stored on disk)
+/sessions/
+
+# Uploaded files (user content, not source)
+/uploads/
+/upload/
+
+
+# ------------------------------------------------------------
+# JavaScript / Node.js (supporting tools, e.g. npm, Vite)
+# ------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnp
+.pnp.js
+
+# Build output
+/dist/
+/build/
+/.parcel-cache/
+/.cache/
+/.vite/
+
+
+# ------------------------------------------------------------
+# CSS preprocessors (Sass / Less)
+# ------------------------------------------------------------
+*.css.map
+*.sass.cache/
+.sass-cache/
+
+
+# ------------------------------------------------------------
+# HTML / general web assets
+# ------------------------------------------------------------
+
+# Compiled / minified files (keep sources, ignore generated)
+*.min.js
+*.min.css
+
+# Source maps (optional — remove lines if you want to keep them)
+*.js.map
+
+
+# ------------------------------------------------------------
+# Databases & sensitive data
+# ------------------------------------------------------------
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+*.mdb
+
+# Exported data files
+*.csv
+*.json.bak
+
+
+# ------------------------------------------------------------
+# Archives & binaries
+# ------------------------------------------------------------
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.exe
+*.dll
+
+
+# ------------------------------------------------------------
+# Exam-specific — files you deliberately want to ignore
+# ------------------------------------------------------------
+
+# Scratch / notes
+notes.txt
+todo.txt
+scratch.*
+_draft/
+_old/
+_archive/

@@ -1,0 +1,67 @@
+* {
+  font-family: "Century Gothic, Arial";
+}
+
+body {
+  background-color: blanchedalmond;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background-color: Sienna;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: 130%;
+}
+
+#left {
+  background-color: navajowhite;
+  margin: 10px;
+  padding: 20px;
+  width: 35%;
+  height: 400px;
+  box-shadow: 5px 5px 10px dimgray;
+  float: left;
+}
+
+nav {
+  width: 50%;
+  height: 50px;
+  float: right;
+}
+#right {
+  width: 50%;
+  height: 470px;
+  overflow: auto;
+  float: right;
+}
+
+input,
+button {
+  margin-top: 20px;
+}
+
+li {
+  display: inline-block;
+}
+
+img {
+  width: 10%;
+  float: left;
+}
+
+a {
+  counter-reset: Sienna;
+  margin-right: 30px;
+}
+
+a:hover {
+  color: #4c1900;
+}
+
+footer {
+  clear: both;
+}
