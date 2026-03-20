@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Komputery</title>
+    <link rel="stylesheet" href="styl.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <header><img src="baner1.png" alt="Pogotowie komputerowe" /></header>
+      <menu>
+        <a href="index.html">Strona Główna</a>
+        <a href="kontakt.html">Kontakt</a>
+      </menu>
+      <main>
+        <section></section>
+        <section id="contact">
+          <h2>Kontakt</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>Imię:</td>
+                <td><input type="text" name="" id="name" /></td>
+              </tr>
+              <tr>
+                <td>Nazwisko:</td>
+                <td><input type="text" name="" id="surname" /></td>
+              </tr>
+              <tr>
+                <td>Email:</td>
+                <td><input type="email" name="" id="email" /></td>
+              </tr>
+              <tr>
+                <td>Zgłoszenie:</td>
+                <td>
+                  <select name="" id="case">
+                    <option value="naprawa komputerów">
+                      naprawa komputerów
+                    </option>
+                    <option value="odzyskiwanie danych">
+                      odzyskiwanie danych
+                    </option>
+                    <option value="wirusy">wirusy</option>
+                    <option value="konfiguracja LAN">konfiguracja LAN</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <label for="copy">
+                    <input type="checkbox" name="" id="copy" checked />Wyślij
+                    kopię wiadomości</label
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <button type="reset">Wyczyść</button>
+                  <button onclick="submitForm()">Wyślij</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <hr />
+          <div id="paragraph-container"></div>
+        </section>
+        <section></section>
+      </main>
+      <footer>Autor: <em>00000000000</em></footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
