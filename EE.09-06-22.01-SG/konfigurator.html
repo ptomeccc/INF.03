@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style w JavaScript</title>
+    <link rel="stylesheet" href="styl6.css" />
+  </head>
+  <body>
+    <section id="left">
+      <h1>Konfigurator stylu</h1>
+      <p>Podaj kolor tła</p>
+      <button id="indigo-btn" onclick="changeColor('indigo')">Indigo</button>
+      <button id="steel-btn" onclick="changeColor('steelblue')">
+        SteelBlue
+      </button>
+      <button id="olive-btn" onclick="changeColor('olive')">Olive</button>
+      <p>Podaj kolor czcionki</p>
+      <select name="fontColor" id="fontColor" onchange="changeFontColor()">
+        <option value="white">White</option>
+        <option value="tan">Tan</option>
+        <option value="bisque">Bisque</option>
+        <option value="plum">Plum</option>
+      </select>
+      <br />
+      <p>Podaj rozmiar czcionki w procentach, np. 200%</p>
+      <input
+        type="text"
+        id="fontSize"
+        value="100%"
+        onfocusout="changeFontSize()"
+      />
+      <p>Czy rysunek ma mieć ramkę?</p>
+      <label for="ramka"
+        ><input
+          type="checkbox"
+          name=""
+          id="ramka"
+          onchange="changeBorder()"
+          checked
+        />
+        Rysuj ramkę</label
+      ><br />
+      <p>Jaki jest typ punktora listy?</p>
+      <div id="radio-group">
+        <input type="radio" name="type" id="dysk" value="disc" checked />
+        Dysk<br />
+        <input
+          type="radio"
+          name="type"
+          id="kwadrat"
+          value="square"
+        />Kwadrat<br />
+        <input type="radio" name="type" id="okrag" value="circle" />Okrąg
+      </div>
+    </section>
+    <section id="right">
+      <img id="gibraltar-img" src="gibraltar.jpg" alt="półwysep Gibraltar" />
+      <ul>
+        <li>element 1</li>
+        <li>element 2</li>
+        <li>element 3</li>
+      </ul>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+    </section>
+    <footer>Autor: 00000000000</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+body {
+  font-family: Georgia;
+  margin: 0;
+  padding: 0;
+}
+
+#left {
+  background-color: Maroon;
+  color: white;
+  height: 600px;
+  width: 30%;
+  float: left;
+}
+
+#right {
+  background-color: Maroon;
+  color: white;
+  height: 600px;
+  width: 70%;
+  overflow-y: auto;
+}
+
+footer {
+  background-color: dimgray;
+  color: white;
+  clear: both;
+}
+
+#right > img {
+  float: left;
+}
+
+#right > ul {
+  float: left;
+}
+
+#right > p {
+  clear: both;
+}
+
+#right > p {
+  padding: 10px;
+}
+
+img {
+  padding: 10px;
+  border: 1px solid white;
+}
+
+#indigo-btn {
+  background-color: indigo;
+}
+
+#steel-btn {
+  background-color: steelblue;
+}
+
+#olive-btn {
+  background-color: olive;
+}
