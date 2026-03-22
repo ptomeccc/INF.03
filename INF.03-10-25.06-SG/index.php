@@ -33,7 +33,16 @@
                         <td>Cena</td>
                     </tr>
                 </thead>
-                <tbody></tbody>
+                <tbody>
+                    <?php
+                    $query = 'SELECT kod, nazwa, cena FROM kursy ORDER BY cena ASC';
+                    $result = mysqli_query($conn, $query);
+                    $flags = mysqli_fetch_array($result);
+                    foreach ($flags as $flag) {
+                        echo "$flag <br/>";
+                    }
+                    ?>
+                </tbody>
             </table>
         </section>
         <section id="right">
