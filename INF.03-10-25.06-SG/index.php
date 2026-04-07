@@ -37,6 +37,7 @@
                     <?php
                     $query = 'SELECT kod, nazwa, cena FROM kursy ORDER BY cena ASC';
                     $result = mysqli_query($conn, $query);
+<<<<<<< HEAD
 
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo '<tr>';
@@ -44,6 +45,11 @@
                         echo '<td>' . $row['nazwa'] . '</td>';
                         echo '<td>' . $row['cena'] . '</td>';
                         echo '</tr>';
+=======
+                    $flags = mysqli_fetch_array($result);
+                    foreach ($flags as $flag) {
+                        echo "$flag <br/>";
+>>>>>>> 4e38ca3b56c595087822c08642d7e654456b0444
                     }
                     ?>
                 </tbody>
