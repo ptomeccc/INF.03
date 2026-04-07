@@ -33,34 +33,63 @@
                         <td>Cena</td>
                     </tr>
                 </thead>
-                <tbody></tbody>
+                <tbody>
+                    <?php
+                    $query = 'SELECT kod, nazwa, cena FROM kursy ORDER BY cena ASC';
+                    $result = mysqli_query($conn, $query);
+
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        echo '<tr>';
+                        echo '<td><img src="' . $row['kod'] . '.jpg" alt="kurs"></td>';
+                        echo '<td>' . $row['nazwa'] . '</td>';
+                        echo '<td>' . $row['cena'] . '</td>';
+                        echo '</tr>';
+                    }
+                    ?>
+                </tbody>
             </table>
         </section>
         <section id="right">
             <h2>Zapisy na kursy</h2>
-            <form action="" method="POST">
+            <form action="index.php" method="POST">
                 <label for="name">
                     Imię: <br>
-                    <input type="text" id="name">
+                    <input type="text" id="name" name="name">
                 </label><br>
                 <label for="surname">
                     Nazwisko: <br>
-                    <input type="text" id="surname">
+                    <input type="text" id="surname" name="surname">
                 </label><br>
                 <label for="age">
                     Wiek: <br>
-                    <input type="number" id="age">
+                    <input type="number" id="age" name="age">
                 </label><br>
                 <label for="course">Rodzaj kursu <br>
                     <select name="" id="course">
                         <?php
-                        echo "<option></option>";
+                        $query2 = 'SELECT nazwa FROM kursy';
+                        $result2 = mysqli_query($conn, $query2);
+                        while ($row2 = mysqli_fetch_assoc($result2)) {
+                            echo '<option>' . $row2['nazwa'] . '</option>';
+                        }
                         ?>
                     </select>
                 </label><br>
                 <input type="submit" value="Dodaj dane">
                 <?php
-                echo "<p id='message'>Wprowadź wszystkie dane</p>";
+
+                if (isset($_POST['name']) && isset($_POST['surname']) && isset($_POST['age'])) {
+                    $name = $_POST['name'];
+                    $surname = $_POST['surname'];
+                    $age = $_POST['age'];
+
+                    $insertQuery = "INSERT INTO uczestnicy VALUES (NULL, '$name', '$surname', $age)";
+                    mysqli_query($conn, $insertQuery);
+                    echo "<p id='message'>Dane uczestnika $name $surname zostały dodane</p>";
+                } else {
+                    echo "<p id='message'>Wprowadź wszystkie dane</p>";
+                }
+                mysqli_close($conn);
                 ?>
             </form>
         </section>

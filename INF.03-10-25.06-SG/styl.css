@@ -35,13 +35,14 @@ table {
   width: 70%;
 }
 
-input {
-  padding: 5px;
+input,
+select {
+  margin: 5px;
   width: 70%;
 }
 
 tr:hover {
-  color: #f8bbd0;
+  background-color: #f8bbd0;
 }
 
 footer {
